@@ -15,15 +15,16 @@
     <button class="back-to-top" title="Torna su"><i class="fa-solid fa-arrow-up"></i>
     </button>
  <button class="confirm-button">Conferma</button>
- <script>
-        document.querySelector('.confirm-button').addEventListener('click', function() { 
-        if (confirm("Sei sicuro di aver letto e compreso la nostra informativa sulla privacy?"))
-    { 
-        alert("Grazie per aver confermato la tua convalida."); } 
-        else { 
-        alert("L'informativa deve essere confermata prima di continuare.");
- }
-            });
- </script>
+ <button class="confirm-button" onclick="confirmation()">Conferma</button>
+
+<script>
+    function confirmation() {
+        if (confirm("Sei sicuro di aver letto e compreso la nostra informativa sulla privacy?")) {
+            window.open("https://inova.studioelpac.it/#/https://inova.studioelpac.it/#/");
+        } else {
+            alert("L'informativa deve essere confermata prima di continuare.");
+        }
+    }
+</script>
  </body>
  </html>
