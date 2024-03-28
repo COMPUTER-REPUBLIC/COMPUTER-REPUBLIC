@@ -4,6 +4,15 @@ body {
   padding: 0;
   background-color: #f2f2f2;
 }
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/1de12dfa-1ee7-4374-999a-8a8528504d1f);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
 
 .container {
   max-width: 1000px;
@@ -33,7 +42,7 @@ embed {
 }
 
 button {
-  background-color: #5c3d84;
+  background-color: #080013;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -45,14 +54,14 @@ button {
 }
 
 button:hover {
-  background-color: #4c3374;
+  background-color: #000000;
 }
 
 .back-to-top {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #5c3d84;
+  background-color: #000000;
   color: #fff;
   font-size: 1.5em;
   padding: 10px;
@@ -63,5 +72,5 @@ button:hover {
 }
 
 .back-to-top:hover {
-  background-color: #4c3374;
+  background-color: #000000;
 }
