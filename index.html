@@ -26,4 +26,13 @@
          <button class="confirm-button" onclick="confirmation()">Conferma</button>
       </div>
    </body>
+   <script>
+    function confirmation() {
+        if (confirm("Sei sicuro di aver letto e compreso la nostra informativa sulla privacy?")) {
+            window.open("https://inova.studioelpac.it/#/https://inova.studioelpac.it/#/");
+        } else {
+            alert("L'informativa deve essere confermata prima di continuare.");
+        }
+    }
+</script>
 </html>
