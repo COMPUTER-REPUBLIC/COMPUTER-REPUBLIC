@@ -1,25 +1,27 @@
 <!DOCTYPE html>
  <html lang="it">
  <head> 
- <meta charset="UTF-8">
- <title>Pagina di privacy</title>
- <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Pagina di privacy</title>
+    <link rel="stylesheet" href="style.css">
  </head>
  <body>
- <h1>Informativa Privacy</h1>
- <embed src="Testi da inserire come link per sito.pdf" type="application/pdf" width="200%" height="1000px">
- <embed src="valutazione di impatto.pdf" type="application/pdf" width="200%" height="1000px"> 
- <button class="back-to-top" title="Torna su"><i class="fa-solid fa-arrow-up"></i></button>
+    <h1>Informativa Privacy</h1>
+    <h2></h2>
+    <embed src="Testi da inserire come link per sito.pdf" type="application/pdf" width="200%" height="1000px">
+    <embed src="valutazione di impatto.pdf" type="application/pdf" width="200%" height="1000px"> 
+    <button class="back-to-top" title="Torna su"><i class="fa-solid fa-arrow-up"></i>
+    </button>
  <button class="confirm-button">Conferma</button>
  <script>
- document.querySelector('.confirm-button').addEventListener('click', function() { 
-   if (confirm("Sei sicuro di aver letto e compreso la nostra informativa sulla privacy?"))
+        document.querySelector('.confirm-button').addEventListener('click', function() { 
+        if (confirm("Sei sicuro di aver letto e compreso la nostra informativa sulla privacy?"))
     { 
-      alert("Grazie per aver confermato la tua convalida."); } 
-      else { 
-      alert("L'informativa deve essere confermata prima di continuare.");
+        alert("Grazie per aver confermato la tua convalida."); } 
+        else { 
+        alert("L'informativa deve essere confermata prima di continuare.");
  }
- });
+            });
  </script>
  </body>
  </html>
