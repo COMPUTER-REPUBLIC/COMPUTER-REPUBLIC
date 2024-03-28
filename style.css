@@ -21,8 +21,9 @@ body {
 }
 
 h1, h2 {
-  font-weight: normal;
+  font-weight: arial;
   margin: 20px 0;
+  color: #fff;
 }
 
 h1 {
@@ -72,5 +73,5 @@ button:hover {
 }
 
 .back-to-top:hover {
-  background-color: #000000;
+  background-color: #fcfcfc;
 }
