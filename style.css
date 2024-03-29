@@ -5,9 +5,10 @@ body {
   background-color: #f8f8f8;
 }
 h1 {
+  text-align: center;
   color: white;
-  /* Aggiunge un effetto di ombreggiatura per migliorare la leggibilità */
-  text-shadow: 1px 1px #ffffff, -1px 1px #f5f5f5, 1px -1px #f3f3f3, -1px -1px #fcfcfc;
+  font-weight: bold;
+  text-shadow: 1px 1px #000, -1px 1px #000, 1px -1px #000, -1px -1px #000;
 }
 body {
   background-image: url("https://raw.githubusercontent.com/ITBATMAN93/Batrepository/main/Image.jfif");
