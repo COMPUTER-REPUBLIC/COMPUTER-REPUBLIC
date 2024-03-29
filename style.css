@@ -42,16 +42,6 @@ button {
   margin-right: 10px;
 }
 
-button::after {
-  content: "";
-  position: absolute;
-  inset: -4px;
-  filter: blur(20px);
-  border: 4px solid transparent;
-  background: var(--glow);
-  border-radius: 1rem;
-}
-
 button:hover {
   background-color: #000000;
 }
