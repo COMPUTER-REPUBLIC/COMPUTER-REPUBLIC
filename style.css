@@ -5,13 +5,10 @@ body {
   background-color: #f2f2f2;
 }
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/1de12dfa-1ee7-4374-999a-8a8528504d1f);
-  background-size: cover;
+  background-image: url("https://raw.githubusercontent.com/ITBATMAN93/Batrepository/main/Image.jfif");
   background-repeat: no-repeat;
-  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .container {
