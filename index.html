@@ -32,6 +32,15 @@
          <button class="confirm-button" onclick="confirmation()" id="confirm-button" disabled>Conferma</button>
       </div>
       <script>
+          const checkbox = document.getElementById("privacy-checkbox");
+         const confirmButton = document.getElementById("confirm-button");
+
+         checkbox.addEventListener("change", function() {
+            if (this.checked) {
+               confirmButton.disabled = false;
+            } else {
+               confirmButton.disabled = true;
+            }
          function confirmation() {
             if (document.getElementById("privacy-checkbox").checked) {
                if (confirm("Sei sicuro di aver letto e compreso la nostra informativa sulla privacy?")) {
@@ -41,16 +50,6 @@
                alert("Devi leggere e accettare l'informativa sulla privacy prima di continuare.");
             }
          }
-
-         const checkbox = document.getElementById("privacy-checkbox");
-         const confirmButton = document.getElementById("confirm-button");
-
-         checkbox.addEventListener("change", function() {
-            if (this.checked) {
-               confirmButton.disabled = false;
-            } else {
-               confirmButton.disabled = true;
-            }
          });
       </script>
    </body>
