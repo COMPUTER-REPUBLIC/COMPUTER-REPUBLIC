@@ -1,3 +1,4 @@
+const checkbox = document.getElementById("privacy-checkbox");
 const confirmButton = document.getElementById("confirm-button");
 
 checkbox.addEventListener("change", function() {
