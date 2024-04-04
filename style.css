@@ -10,6 +10,19 @@ h1 {
   font-weight: bold;
   text-shadow: 1px 1px #000, -1px 1px #000, 1px -1px #000, -1px -1px #000;
 }
+.pdf-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.button-container {
+  margin-top: 50px;
+  text-align: center;
+}
+.button-container label {
+  color: white;
+}
 body {
   background-image: url("https://raw.githubusercontent.com/ITBATMAN93/Batrepository/main/Image.jfif");
   background-repeat: no-repeat;
