@@ -1,58 +1,57 @@
 <!DOCTYPE html>
 <html lang="it">
-   <head>
-      <meta charset="UTF-8">
-      <title>Informativa sulla Privacy</title>
-      <link rel="stylesheet" href="style.css">
-      <style>
-       .pdf-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 50px;
-         }
-       .button-container {
-            margin-top: 50px;
-            text-align: center;
-         }
-         .button-container label {
-            color: white;
-         }
-      </style>
-   </head>
-   <body>
-      <h1 style="text-align: center;">Informativa sulla Privacy</h1>
-      <div class="pdf-container">
-         <embed src="Informativa Privacy PT1.pdf" type="application/pdf" width="50%" height="700px">
-         <embed src="Informativa Privacy PT2.pdf" type="application/pdf" width="50%" height="700px">
-      </div>
-      <div class="button-container">
-         <input type="checkbox" id="privacy-checkbox" value="Ho preso visione e acconsento al trattamento dei dati personali ai sensi dell’art. 13 del Regolamento UE 2016/679 (c.d. GDPR) e del D. Lgs. 30.06.2003, n. 196, così come modificato ed integrato dal D. Lgs. 10.08.2018, n. 101 (c.d. Codice Privacy).">
-         <label for="privacy-checkbox">Ho preso visione e acconsento al trattamento dei dati personali ai sensi dell’art. 13 del Regolamento UE 2016/679 (c.d. GDPR) e del D. Lgs. 30.06.2003, n. 196, così come modificato ed integrato dal D. Lgs. 10.08.2018, n. 101 (c.d. Codice Privacy).</label><br>
-         <button class="confirm-button" onclick="confirmation()" id="confirm-button">Conferma</button>
-      </div>
-      <script>
-         function confirmation() {
-            if (document.getElementById("privacy-checkbox").checked) {
-               if (confirm("Sei sicuro di aver letto e compreso la nostra informativa sulla privacy?")) {
-                  window.open("https://inova.studioelpac.it/#/https://inova.studioelpac.it/#/");
-               }
-            } else {
-               alert("Devi leggere e accettare l'informativa sulla privacy prima di continuare.");
-            }
-         }
+<head>
+  <meta charset="UTF-8">
+  <title>Informativa sulla Privacy</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .pdf-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+     }
+  .button-container {
+        margin-top: 50px;
+        text-align: center;
+     }
+  .button-container label {
+        color: white;
+     }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Informativa sulla Privacy</h1>
+  <div class="pdf-container">
+     <embed src="Informativa Privacy PT1.pdf" type="application/pdf" width="50%" height="700px">
+     <embed src="Informativa Privacy PT2.pdf" type="application/pdf" width="50%" height="700px">
+  </div>
+  <div class="button-container">
+     <input type="checkbox" id="privacy-checkbox" value="Ho preso visione e acconsento al trattamento dei dati personali ai sensi dell’art. 13 del Regolamento UE 2016/679 (c.d. GDPR) e del D. Lgs. 30.06.2003, n. 196, così come modificato ed integrato dal D. Lgs. 10.08.2018, n. 101 (c.d. Codice Privacy).">
+     <label for="privacy-checkbox">Ho preso visione e acconsento al trattamento dei dati personali ai sensi dell’art. 13 del Regolamento UE 2016/679 (c.d. GDPR) e del D. Lgs. 30.06.2003, n. 196, così come modificato ed integrato dal D. Lgs. 10.08.2018, n. 101 (c.d. Codice Privacy).</label><br>
+     <button class="confirm-button" id="confirm-button" onclick="confirmation()">Inova</button>
+  </div>
+  <script>
+     function confirmation() {
+        if (document.getElementById("privacy-checkbox").checked) {
+           if (confirm("Sei sicuro di aver letto e compreso la nostra informativa sulla privacy?")) {
+              window.open("https://inova.studioelpac.it/#/https://inova.studioelpac.it/#/");
+           } else {
+              alert("Devi leggere e accettare l'informativa sulla privacy prima di continuare.");
+           }
+        }
+     }
 
-         const checkbox = document.getElementById("privacy-checkbox");
-         const confirmButton = document.getElementById("confirm-button");
+     const checkbox = document.getElementById("privacy-checkbox");
+     const confirmButton = document.getElementById("confirm-button");
 
-         checkbox.addEventListener("change", function() {
-            if (this.checked) {
-               confirmButton.disabled = false;
-            } else {
-               alert("Devi leggere e accettare l'informativa sulla privacy prima di continuare.");
-            }
-         });
-      </script>
-      <script src="main.js"></script>
-   </body>
+     checkbox.addEventListener("change", function() {
+        if (this.checked) {
+           confirmButton.value = "Inova";
+        } else {
+           confirmButton.value = "Conferma";
+        }
+     });
+  </script>
+</body>
 </html>
