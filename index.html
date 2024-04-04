@@ -19,20 +19,13 @@
    </head>
    <body>
       <h1 style="text-align: center;">Informativa Privacy</h1>
-      <div class="container">
-        <div class="pdf-container">
-          <iframe src="Informativa Privacy PT1.pdf" width="100%" height="700px"></iframe>
-          <div class="checkbox-container">PDF 1
-            <input type="checkbox" name="pdf1" id="pdf1">
-            <span class="checkmark"></span>
-          </div>
-        </ref>
-        <div class="pdf-container">
-          <iframe src="Informativa Privacy PT2.pdf" width="100%" height="700px"></iframe>
-          <div class="checkbox-container">PDF 2
-            <input type="checkbox" name="pdf2" id="pdf2">
-            <span class="checkmark"></span>
-          </div>
+      <div class="pdf-container">
+         <embed src="Informativa Privacy PT1.pdf" type="application/pdf" width="50%" height="700px">
+         <embed src="Informativa Privacy PT2.pdf" type="application/pdf" width="50%" height="700px">
+      </div>
+      <div class="button-container">
+         <button class="confirm-button" onclick="confirmation()">Conferma</button>
+      </div>
    </body>
    <script>
     function confirmation() {
