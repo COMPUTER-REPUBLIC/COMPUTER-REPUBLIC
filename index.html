@@ -5,28 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conferma lettura PDF</title>
   <style>
-   .container {
+  .container {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-   .pdf-container {
+  .pdf-container {
       margin-bottom: 50px;
     }
-   .checkbox-container {
+  .checkbox-container {
       display: inline-block;
       position: relative;
       padding-left: 35px;
       cursor: pointer;
-      font-size: 22px;
-      user-select: none;
     }
-   .checkbox-container input[type="checkbox"] {
+  .checkbox-container input[type="checkbox"] {
       position: absolute;
       opacity: 0;
       cursor: pointer;
     }
-   .checkmark {
+  .checkmark {
       position: absolute;
       top: 0;
       left: 0;
@@ -35,21 +33,21 @@
       background-color: #eee;
       border-radius: 5px;
     }
-   .checkbox-container:hover input[type="checkbox"] ~.checkmark {
+  .checkbox-container:hover input[type="checkbox"] ~.checkmark {
       background-color: #ccc;
     }
-   .checkbox-container input[type="checkbox"]:checked ~.checkmark {
+  .checkbox-container input[type="checkbox"]:checked ~.checkmark {
       background-color: #2196F3;
     }
-   .checkmark:after {
+  .checkmark:after {
       content: "";
       position: absolute;
       display: none;
     }
-   .checkbox-container input[type="checkbox"]:checked ~.checkmark:after {
+  .checkbox-container input[type="checkbox"]:checked ~.checkmark:after {
       display: block;
     }
-   .checkbox-container.checkmark:after {
+  .checkbox-container.checkmark:after {
       left: 9px;
       top: 5px;
       width: 5px;
