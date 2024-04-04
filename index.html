@@ -32,26 +32,29 @@
      <button class="confirm-button" id="confirm-button" onclick="confirmation()">Inova</button>
   </div>
   <script>
-     function confirmation() {
-        if (document.getElementById("privacy-checkbox").checked) {
-           if (confirm("Sei sicuro di aver letto e compreso la nostra informativa sulla privacy?")) {
-              window.open("https://inova.studioelpac.it/#/https://inova.studioelpac.it/#/");
-           } else {
-              alert("Devi leggere e accettare l'informativa sulla privacy prima di continuare.");
-           }
-        }
+   function confirmation() {
+     if (document.getElementById("privacy-checkbox").checked) {
+       if (confirm("Sei sicuro di aver letto e compreso la nostra informativa sulla privacy?")) {
+         window.open("https://inova.studioelpac.it/#/https://inova.studioelpac.it/#/");
+       } else {
+         alert("Devi leggere e accettare l'informativa sulla privacy prima di continuare.");
+       }
      }
-
-     const checkbox = document.getElementById("privacy-checkbox");
-     const confirmButton = document.getElementById("confirm-button");
-
-     checkbox.addEventListener("change", function() {
-        if (this.checked) {
-           confirmButton.value = "Inova";
-        } else {
-           confirmButton.value = "Conferma";
-        }
-     });
-  </script>
+   }
+ 
+   const checkbox = document.getElementById("privacy-checkbox");
+   const confirmButton = document.getElementById("confirm-button");
+ 
+   checkbox.addEventListener("change", function() {
+     if (this.checked) {
+       confirmButton.value = "Nuovo Nome";
+       confirmButton.disabled = false;
+     } else {
+       confirmButton.value = "Conferma";
+       confirmButton.disabled = true;
+       alert("Devi leggere e accettare l'informativa sulla privacy prima di continuare.");
+     }
+   });
+ </script>
 </body>
 </html>
