@@ -76,3 +76,6 @@ button:hover {
 .back-to-top:hover {
   background-color: #fcfcfc;
 }
+.checkbox-container label {
+  color: #FFFFFF;
+}
