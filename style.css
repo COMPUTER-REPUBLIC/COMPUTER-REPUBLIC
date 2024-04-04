@@ -63,14 +63,12 @@ button:hover {
 .back-to-top:hover {
   background-color: #fcfcfc;
 }
-container {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.pdf-container {
-  margin-bottom: 50px;
-}
+
 .checkbox-container {
   display: inline-block;
   position: relative;
