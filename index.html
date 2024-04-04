@@ -5,18 +5,15 @@
       <title>Informativa Privacy</title>
       <link rel="stylesheet" href="style.css">
       <style>
-        .pdf-container {
+       .pdf-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 50px;
          }
-        .button-container {
+       .button-container {
             margin-top: 50px;
             text-align: center;
-         }
-         .button-container label {
-            color: white;
          }
       </style>
    </head>
@@ -32,15 +29,6 @@
          <button class="confirm-button" onclick="confirmation()" id="confirm-button" disabled>Conferma</button>
       </div>
       <script>
-          const checkbox = document.getElementById("privacy-checkbox");
-         const confirmButton = document.getElementById("confirm-button");
-
-         checkbox.addEventListener("change", function() {
-            if (this.checked) {
-               confirmButton.disabled = false;
-            } else {
-               confirmButton.disabled = true;
-            }
          function confirmation() {
             if (document.getElementById("privacy-checkbox").checked) {
                if (confirm("Sei sicuro di aver letto e compreso la nostra informativa sulla privacy?")) {
@@ -50,6 +38,17 @@
                alert("Devi leggere e accettare l'informativa sulla privacy prima di continuare.");
             }
          }
+
+         const checkbox = document.getElementById("privacy-checkbox");
+         const confirmButton = document.getElementById("confirm-button");
+
+         checkbox.addEventListener("change", function() {
+            if (this.checked) {
+               confirmButton.disabled = false;
+            } else {
+               confirmButton.disabled = true;
+               alert("Devi leggere e accettare l'informativa sulla privacy prima di continuare.");
+            }
          });
       </script>
    </body>
