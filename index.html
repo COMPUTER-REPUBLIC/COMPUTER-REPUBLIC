@@ -5,13 +5,13 @@
       <title>Informativa Privacy</title>
       <link rel="stylesheet" href="style.css">
       <style>
-         .pdf-container {
+        .pdf-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 50px;
          }
-         .button-container {
+        .button-container {
             margin-top: 50px;
             text-align: center;
          }
@@ -24,16 +24,29 @@
          <embed src="Informativa Privacy PT2.pdf" type="application/pdf" width="50%" height="700px">
       </div>
       <div class="button-container">
-         <button class="confirm-button" onclick="confirmation()">Conferma</button>
+         <input type="checkbox" id="privacy-checkbox" value="Ho preso visione dell'informativa privacy">
+         <label for="privacy-checkbox">Ho preso visione dell'informativa privacy</label><br>
+         <button class="confirm-button" onclick="confirmation()" id="confirm-button" disabled>Conferma</button>
       </div>
+      <script>
+         function confirmation() {
+            if (confirm("Sei sicuro di aver letto e compreso la nostra informativa sulla privacy?")) {
+               window.open("https://inova.studioelpac.it/#/https://inova.studioelpac.it/#/");
+            } else {
+               alert("L'informativa deve essere confermata prima di continuare.");
+            }
+         }
+
+         const checkbox = document.getElementById("privacy-checkbox");
+         const confirmButton = document.getElementById("confirm-button");
+
+         checkbox.addEventListener("change", function() {
+            if (this.checked) {
+               confirmButton.disabled = false;
+            } else {
+               confirmButton.disabled = true;
+            }
+         });
+      </script>
    </body>
-   <script>
-    function confirmation() {
-        if (confirm("Sei sicuro di aver letto e compreso la nostra informativa sulla privacy?")) {
-            window.open("https://inova.studioelpac.it/#/https://inova.studioelpac.it/#/");
-        } else {
-            alert("L'informativa deve essere confermata prima di continuare.");
-        }
-    }
-</script>
 </html>
