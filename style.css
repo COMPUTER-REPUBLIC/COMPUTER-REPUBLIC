@@ -8,8 +8,7 @@ body {
   background-image: url("https://github.com/COMPUTER-REPUBLIC/COMPUTER-REPUBLIC/blob/main/Inova-IMG.jpeg?raw=true");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
 }
 h1 {
   text-align: center;
